@@ -6,90 +6,152 @@
   <title>แหล่งอ้างอิง</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
-      font-size: 34px;
-      line-height: 1.9;
-      padding: 28px;
+      margin: 0;
+      padding: 20px;
       background: white;
       color: black;
+      font-family: Arial, Tahoma, sans-serif;
+      font-size: clamp(18px, 4.2vw, 24px);
+      line-height: 1.7;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: clamp(22px, 5vw, 30px);
       font-weight: normal;
-      margin-bottom: 36px;
+      margin: 0 0 24px 0;
     }
 
-    ul {
-      padding-left: 36px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
     }
 
-    li {
-      margin-bottom: 36px;
+    td {
+      padding: 0 0 20px 0;
+      vertical-align: top;
+    }
+
+    .number {
+      width: 36px;
+      padding-right: 8px;
+      white-space: nowrap;
     }
 
     a {
       color: black;
       text-decoration: underline;
+      overflow-wrap: anywhere;
       word-break: break-word;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 16px;
+        font-size: clamp(19px, 4.8vw, 22px);
+      }
+
+      h1 {
+        font-size: clamp(23px, 6vw, 28px);
+      }
+
+      .number {
+        width: 30px;
+      }
+
+      td {
+        padding-bottom: 18px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <main>
+    <h1>แหล่งอ้างอิง</h1>
 
-  <h1>แหล่งอ้างอิง</h1>
+    <table>
+      <tr>
+        <td class="number">1.</td>
+        <td>
+          <a href="https://nockacademy.com/thai-language/%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%97%E0%B9%82%E0%B8%84%E0%B8%A5%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%95%E0%B8%AD%E0%B8%99-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%B5%E0%B8%A2%E0%B8%99/">
+            ศึกษาตัวบทโคลนติดล้อ ตอน ความนิยมเป็นเสมียน - NockAcademy
+          </a>
+        </td>
+      </tr>
 
-  <ul>
-    <li>
-      <a href="https://nockacademy.com/thai-language/%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%97%E0%B9%82%E0%B8%84%E0%B8%A5%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%95%E0%B8%AD%E0%B8%99-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%B5%E0%B8%A2%E0%B8%99/">
-        ศึกษาตัวบทโคลนติดล้อ ตอน ความนิยมเป็นเสมียน - NockAcademy
-      </a>
-    </li>
+      <tr>
+        <td class="number">2.</td>
+        <td>
+          <a href="https://www.trueplookpanya.com/learning/detail/31974">
+            บทเรียนออนไลน์ วิชาภาษาไทย เรื่อง โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - TruePlookpanya
+          </a>
+        </td>
+      </tr>
 
-    <li>
-      <a href="https://www.trueplookpanya.com/learning/detail/31974">
-        บทเรียนออนไลน์ วิชาภาษาไทย เรื่อง โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - TruePlookpanya
-      </a>
-    </li>
+      <tr>
+        <td class="number">3.</td>
+        <td>
+          <a href="https://nockacademy.com/thai-language/%E0%B9%82%E0%B8%84%E0%B8%A5%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%B8%E0%B8%81%E0%B9%83%E0%B8%88%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%97%E0%B8%B5%E0%B9%88-6/">
+            โคลนติดล้อ บทความปลุกใจในรัชกาลที่ 6 - NockAcademy
+          </a>
+        </td>
+      </tr>
 
-    <li>
-      <a href="https://nockacademy.com/thai-language/%E0%B9%82%E0%B8%84%E0%B8%A5%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%B8%E0%B8%81%E0%B9%83%E0%B8%88%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%97%E0%B8%B5%E0%B9%88-6/">
-        โคลนติดล้อ บทความปลุกใจในรัชกาลที่ 6 - NockAcademy
-      </a>
-    </li>
+      <tr>
+        <td class="number">4.</td>
+        <td>
+          <a href="https://sites.google.com/a/dongjen.ac.th/kruben/%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%84%E0%B8%94%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%A1-%E0%B9%95/hnwy-thi-4">
+            โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - Google Sites
+          </a>
+        </td>
+      </tr>
 
-    <li>
-      <a href="https://sites.google.com/a/dongjen.ac.th/kruben/%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%84%E0%B8%94%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%A1-%E0%B9%95/hnwy-thi-4">
-        โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - Google Sites
-      </a>
-    </li>
+      <tr>
+        <td class="number">5.</td>
+        <td>
+          <a href="https://ppk-thai-online.blogspot.com/p/blog-page_4.html">
+            คุณค่าของเรื่องโคลนติดล้อ - บทเรียนภาษาไทยออนไลน์
+          </a>
+        </td>
+      </tr>
 
-    <li>
-      <a href="https://ppk-thai-online.blogspot.com/p/blog-page_4.html">
-        คุณค่าของเรื่องโคลนติดล้อ - บทเรียนภาษาไทยออนไลน์
-      </a>
-    </li>
+      <tr>
+        <td class="number">6.</td>
+        <td>
+          <a href="https://pubhtml5.com/tcms/ttkq/">
+            02 โคลนติดล้อ - PubHTML5
+          </a>
+        </td>
+      </tr>
 
-    <li>
-      <a href="https://pubhtml5.com/tcms/ttkq/">
-        02 โคลนติดล้อ - PubHTML5
-      </a>
-    </li>
+      <tr>
+        <td class="number">7.</td>
+        <td>
+          <a href="https://pubhtml5.com/xbai/ncqb/">
+            โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - PubHTML5
+          </a>
+        </td>
+      </tr>
 
-    <li>
-      <a href="https://pubhtml5.com/xbai/ncqb/">
-        โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - PubHTML5
-      </a>
-    </li>
-
-    <li>
-      <a href="https://ssru.ac.th/content-rank/13.pdf">
-        โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - เอกสาร PDF
-      </a>
-    </li>
-  </ul>
-
+      <tr>
+        <td class="number">8.</td>
+        <td>
+          <a href="https://ssru.ac.th/content-rank/13.pdf">
+            โคลนติดล้อ ตอน ความนิยมเป็นเสมียน - เอกสาร PDF
+          </a>
+        </td>
+      </tr>
+    </table>
+  </main>
 </body>
 </html>
